@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Domaren| Простая аренда & покупка жилья</title>
+	<link rel="stylesheet" href="/styles/style.css">
+	<link rel="stylesheet" href="/styles/style.scss">
+	
+	<script defer src="/scripts/script.js"></script>
+	<script src="/scripts/swiper.js"></script>
+</head>
+
+<body>
+	<body>
+		<header class="header">
+		  <div class="header__container">
+			<!-- Логотип -->
+			<a href="" class="header__logo">
+			  <span style="color: white; font-size: 25px; font-family: Arial;">Domaren</span>
+			</a>
+	  
+			<!-- Навигация и кнопки -->
+			<div class="header__navigation">
+			  <nav class="header__menu menu">
+				<ul class="menu__body">
+				  <li class="menu__item"><a href="" class="menu__link">Купить</a></li>
+				  <li class="menu__item"><a href="" class="menu__link">Арендовать</a></li>
+				  <li class="menu__item"><a href="" class="menu__link">Продать</a></li>
+				  <li class="menu__item"><a href="personal-account.html" class="menu__link">Личный кабинет</a></li>
+				  <li class="menu__item"><a href="onas.html" class="menu__link">О нас</a></li>
+				</ul>
+			  </nav>
+	  
+			  <div class="header__buttons">
+				<button class="login header__btn" onclick="location.href='login.html'">Войти</button>
+				<button class="register header__btn" onclick="location.href='registration.html'">Зарегистрироваться</button>
+			</div>
+			
+			  <div class="menu-icon">
+				<span></span><span></span><span></span>
+			  </div>
+			</div>
+		  </div>
+		</header>
+	  </body>
+	  
+	<main class="page">
+		<section class="hero">
+			<div class='hero__container'>
+				<div class="hero__content">
+					<h1 class="hero__title">Простая аренда & покупка жилья</h1>
+					<p class="hero__text text">«Я по-прежнему такой же нежный И мечтаю только лишь о том, Чтоб скорее от тоски мятежной Воротиться в наш дом» (Сергей Есенин). </p>
+					<div class="hero__filter filter">
+						<div class="filter__block block-filter">
+							<div class="block-filter__button">
+								<div class="block-filter__header">
+									<div class="block-filter__type">Вид</div>
+									<div class="block-filter__icon"></div>
+								</div>
+								<div class="block-filter__value">Покупка</div>
+							</div>
+							<div class="block-filter__dropdown">
+								<div class="block-filter__item">Покупка</div>
+								<div class="block-filter__item">Продажа</div>
+								<div class="block-filter__item">Аренда</div>
+							</div>
+						</div>
+						<div class="filter__block block-filter">
+							<div class="block-filter__button">
+								<div class="block-filter__header">
+									<div class="block-filter__type">Местоположение</div>
+									<div class="block-filter__icon"></div>
+								</div>
+								<div class="block-filter__value">Москва</div>
+							</div>
+							<div class="block-filter__dropdown">
+								<div class="block-filter__item">Москва</div>
+								<div class="block-filter__item">Московская область</div>
+							</div>
+						</div>
+						<div class="filter__block block-filter">
+							<div class="block-filter__button">
+								<div class="block-filter__header">
+									<div class="block-filter__type">Тип</div>
+									<div class="block-filter__icon"></div>
+								</div>
+								<div class="block-filter__value">Квартира</div>
+							</div>
+							<div class="block-filter__dropdown">
+								<div class="block-filter__item">Загородный Дом</div>
+								<div class="block-filter__item">Танхаус</div>
+								<div class="block-filter__item">Квартира</div>
+							</div>
+						</div>
+						<div class="filter__btn">
+							<button>Поиск</button>
+						</div>
+					</div>
+				</div>
+				<div class="hero__img"><img src="/images/main-1.png" alt="house"></div>
+			</div>
+			<svg class="hero-deco" width="128" height="501" viewBox="0 0 128 501" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<rect x="92.4355" y="314.033" width="127.863" height="123.867" transform="rotate(42.3449 92.4355 314.033)"
+					fill="var(--accent-color)" stroke="#121B25" stroke-width="12" />
+				<rect x="92.4355" y="212.355" width="127.863" height="123.867" transform="rotate(42.3449 92.4355 212.355)"
+					fill="var(--accent-color)" stroke="#121B25" stroke-width="12" />
+				<rect x="92.4355" y="110.678" width="127.863" height="123.867" transform="rotate(42.3449 92.4355 110.678)"
+					fill="var(--accent-color)" stroke="#121B25" stroke-width="12" />
+				<rect x="92.4355" y="9" width="127.863" height="123.867" transform="rotate(42.3449 92.4355 9)"
+					fill="var(--accent-color)" stroke="#121B25" stroke-width="12" />
+			</svg>
+		</section>
+		<section class="popular">
+			<div class='popular__container'>
+				<h2 class="popular__title title">Популярные Предложения</h2>
+				<div class="popular__slider">
+					<div class="swiper popular-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide popular-slide">
+								<div class="popular-slide__thumb">
+									<img src="/images/variant-1.png" alt="">
+								</div>
+								<div class="popular-slide__text">
+									<div class="popular-slide__title">Park Ville</div>
+									<div class="popular-slide__desc text">Московская область, Одинцовский городской округ, Жуковка деревня, Парк Вилл территория, 38</div>
+								</div>
+								<div class="popular-slide__labels">
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M4.125 4.125C2.99406 4.125 2.0625 5.05656 2.0625 6.1875V10.8494C1.64312 11.2283 1.375 11.7707 1.375 12.375V18.5625H4.8125V17.1875H17.1875V18.5625H20.625V12.375C20.625 11.7707 20.3569 11.2283 19.9375 10.8494V6.1875C19.9375 5.05656 19.0059 4.125 17.875 4.125H4.125ZM4.125 5.5H17.875C18.2566 5.5 18.5625 5.80594 18.5625 6.1875V10.3125H17.1875V9.625C17.1875 8.49406 16.2559 7.5625 15.125 7.5625H12.375C11.8484 7.5625 11.3651 7.76875 11 8.09944C10.6242 7.75605 10.1341 7.56468 9.625 7.5625H6.875C5.74406 7.5625 4.8125 8.49406 4.8125 9.625V10.3125H3.4375V6.1875C3.4375 5.80594 3.74344 5.5 4.125 5.5ZM6.875 8.9375H9.625C10.0066 8.9375 10.3125 9.24344 10.3125 9.625V10.3125H6.1875V9.625C6.1875 9.24344 6.49344 8.9375 6.875 8.9375ZM12.375 8.9375H15.125C15.5066 8.9375 15.8125 9.24344 15.8125 9.625V10.3125H11.6875V9.625C11.6875 9.24344 11.9934 8.9375 12.375 8.9375ZM3.4375 11.6875H18.5625C18.9441 11.6875 19.25 11.9934 19.25 12.375V17.1875H18.5625V15.8125H3.4375V17.1875H2.75V12.375C2.75 11.9934 3.05594 11.6875 3.4375 11.6875Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>3 Спальни</span>
+									</div>
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M17.875 2.75C16.3556 2.75 15.125 3.98062 15.125 5.5H13.75V6.875H17.875V5.5H16.5C16.5 4.68119 17.0562 4.125 17.875 4.125C18.6938 4.125 19.25 4.68119 19.25 5.5V9.625H0.6875V11H1.50425L2.55612 16.2209V16.2422C2.63597 16.5927 2.80427 16.917 3.04496 17.184C3.28566 17.4511 3.59074 17.652 3.93112 17.7677L3.4375 19.25H4.8125L5.2635 17.875H16.7365L17.1875 19.25H18.5625L18.0682 17.7677C18.788 17.5477 19.3469 16.9703 19.5078 16.2422V16.2209L20.4964 11H21.3125V9.625H20.625V5.5C20.625 3.98062 19.3944 2.75 17.875 2.75ZM2.90056 11H19.1208L18.1541 15.9631C18.0737 16.2607 17.8214 16.5 17.4666 16.5H4.598C4.2295 16.5 3.97994 16.2559 3.9105 15.9411L2.90056 11Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>2 Ванные комнаты</span>
+									</div>
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M3.4375 3.4375V8.25H4.8125V13.75H3.4375V18.5625H8.25V17.1875H13.75V18.5625H18.5625V13.75H17.1875V8.25H18.5625V3.4375H13.75V4.8125H8.25V3.4375H3.4375ZM4.8125 4.8125H6.875V6.875H4.8125V4.8125ZM15.125 4.8125H17.1875V6.875H15.125V4.8125ZM8.25 6.1875H13.75V8.25H15.8125V13.75H13.75V15.8125H8.25V13.75H6.1875V8.25H8.25V6.1875ZM4.8125 15.125H6.875V17.1875H4.8125V15.125ZM15.125 15.125H17.1875V17.1875H15.125V15.125Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>140 м*2</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide popular-slide">
+								<div class="popular-slide__thumb">
+									<img src="/images/variant-2.png" alt="">
+								</div>
+								<div class="popular-slide__text">
+									<div class="popular-slide__title">Пресня Сити</div>
+									<div class="popular-slide__desc text">Москва, Ходынская ул. 2</div>
+								</div>
+								<div class="popular-slide__labels">
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M4.125 4.125C2.99406 4.125 2.0625 5.05656 2.0625 6.1875V10.8494C1.64312 11.2283 1.375 11.7707 1.375 12.375V18.5625H4.8125V17.1875H17.1875V18.5625H20.625V12.375C20.625 11.7707 20.3569 11.2283 19.9375 10.8494V6.1875C19.9375 5.05656 19.0059 4.125 17.875 4.125H4.125ZM4.125 5.5H17.875C18.2566 5.5 18.5625 5.80594 18.5625 6.1875V10.3125H17.1875V9.625C17.1875 8.49406 16.2559 7.5625 15.125 7.5625H12.375C11.8484 7.5625 11.3651 7.76875 11 8.09944C10.6242 7.75605 10.1341 7.56468 9.625 7.5625H6.875C5.74406 7.5625 4.8125 8.49406 4.8125 9.625V10.3125H3.4375V6.1875C3.4375 5.80594 3.74344 5.5 4.125 5.5ZM6.875 8.9375H9.625C10.0066 8.9375 10.3125 9.24344 10.3125 9.625V10.3125H6.1875V9.625C6.1875 9.24344 6.49344 8.9375 6.875 8.9375ZM12.375 8.9375H15.125C15.5066 8.9375 15.8125 9.24344 15.8125 9.625V10.3125H11.6875V9.625C11.6875 9.24344 11.9934 8.9375 12.375 8.9375ZM3.4375 11.6875H18.5625C18.9441 11.6875 19.25 11.9934 19.25 12.375V17.1875H18.5625V15.8125H3.4375V17.1875H2.75V12.375C2.75 11.9934 3.05594 11.6875 3.4375 11.6875Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>2 Спальни</span>
+									</div>
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M17.875 2.75C16.3556 2.75 15.125 3.98062 15.125 5.5H13.75V6.875H17.875V5.5H16.5C16.5 4.68119 17.0562 4.125 17.875 4.125C18.6938 4.125 19.25 4.68119 19.25 5.5V9.625H0.6875V11H1.50425L2.55612 16.2209V16.2422C2.63597 16.5927 2.80427 16.917 3.04496 17.184C3.28566 17.4511 3.59074 17.652 3.93112 17.7677L3.4375 19.25H4.8125L5.2635 17.875H16.7365L17.1875 19.25H18.5625L18.0682 17.7677C18.788 17.5477 19.3469 16.9703 19.5078 16.2422V16.2209L20.4964 11H21.3125V9.625H20.625V5.5C20.625 3.98062 19.3944 2.75 17.875 2.75ZM2.90056 11H19.1208L18.1541 15.9631C18.0737 16.2607 17.8214 16.5 17.4666 16.5H4.598C4.2295 16.5 3.97994 16.2559 3.9105 15.9411L2.90056 11Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>1 Ванная комната</span>
+									</div>
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M3.4375 3.4375V8.25H4.8125V13.75H3.4375V18.5625H8.25V17.1875H13.75V18.5625H18.5625V13.75H17.1875V8.25H18.5625V3.4375H13.75V4.8125H8.25V3.4375H3.4375ZM4.8125 4.8125H6.875V6.875H4.8125V4.8125ZM15.125 4.8125H17.1875V6.875H15.125V4.8125ZM8.25 6.1875H13.75V8.25H15.8125V13.75H13.75V15.8125H8.25V13.75H6.1875V8.25H8.25V6.1875ZM4.8125 15.125H6.875V17.1875H4.8125V15.125ZM15.125 15.125H17.1875V17.1875H15.125V15.125Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>60 м*2</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide popular-slide">
+								<div class="popular-slide__thumb">
+									<img src="/images/variant-3.png" alt="">
+								</div>
+								<div class="popular-slide__text">
+									<div class="popular-slide__title">ЖК «Симфония набережных»</div>
+									<div class="popular-slide__desc text">Москва , Котельническая 21</div>
+								</div>
+								<div class="popular-slide__labels">
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M4.125 4.125C2.99406 4.125 2.0625 5.05656 2.0625 6.1875V10.8494C1.64312 11.2283 1.375 11.7707 1.375 12.375V18.5625H4.8125V17.1875H17.1875V18.5625H20.625V12.375C20.625 11.7707 20.3569 11.2283 19.9375 10.8494V6.1875C19.9375 5.05656 19.0059 4.125 17.875 4.125H4.125ZM4.125 5.5H17.875C18.2566 5.5 18.5625 5.80594 18.5625 6.1875V10.3125H17.1875V9.625C17.1875 8.49406 16.2559 7.5625 15.125 7.5625H12.375C11.8484 7.5625 11.3651 7.76875 11 8.09944C10.6242 7.75605 10.1341 7.56468 9.625 7.5625H6.875C5.74406 7.5625 4.8125 8.49406 4.8125 9.625V10.3125H3.4375V6.1875C3.4375 5.80594 3.74344 5.5 4.125 5.5ZM6.875 8.9375H9.625C10.0066 8.9375 10.3125 9.24344 10.3125 9.625V10.3125H6.1875V9.625C6.1875 9.24344 6.49344 8.9375 6.875 8.9375ZM12.375 8.9375H15.125C15.5066 8.9375 15.8125 9.24344 15.8125 9.625V10.3125H11.6875V9.625C11.6875 9.24344 11.9934 8.9375 12.375 8.9375ZM3.4375 11.6875H18.5625C18.9441 11.6875 19.25 11.9934 19.25 12.375V17.1875H18.5625V15.8125H3.4375V17.1875H2.75V12.375C2.75 11.9934 3.05594 11.6875 3.4375 11.6875Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>3 Спальни</span>
+									</div>
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M17.875 2.75C16.3556 2.75 15.125 3.98062 15.125 5.5H13.75V6.875H17.875V5.5H16.5C16.5 4.68119 17.0562 4.125 17.875 4.125C18.6938 4.125 19.25 4.68119 19.25 5.5V9.625H0.6875V11H1.50425L2.55612 16.2209V16.2422C2.63597 16.5927 2.80427 16.917 3.04496 17.184C3.28566 17.4511 3.59074 17.652 3.93112 17.7677L3.4375 19.25H4.8125L5.2635 17.875H16.7365L17.1875 19.25H18.5625L18.0682 17.7677C18.788 17.5477 19.3469 16.9703 19.5078 16.2422V16.2209L20.4964 11H21.3125V9.625H20.625V5.5C20.625 3.98062 19.3944 2.75 17.875 2.75ZM2.90056 11H19.1208L18.1541 15.9631C18.0737 16.2607 17.8214 16.5 17.4666 16.5H4.598C4.2295 16.5 3.97994 16.2559 3.9105 15.9411L2.90056 11Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>2 Ванные комнаты</span>
+									</div>
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M3.4375 3.4375V8.25H4.8125V13.75H3.4375V18.5625H8.25V17.1875H13.75V18.5625H18.5625V13.75H17.1875V8.25H18.5625V3.4375H13.75V4.8125H8.25V3.4375H3.4375ZM4.8125 4.8125H6.875V6.875H4.8125V4.8125ZM15.125 4.8125H17.1875V6.875H15.125V4.8125ZM8.25 6.1875H13.75V8.25H15.8125V13.75H13.75V15.8125H8.25V13.75H6.1875V8.25H8.25V6.1875ZM4.8125 15.125H6.875V17.1875H4.8125V15.125ZM15.125 15.125H17.1875V17.1875H15.125V15.125Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>134 м*2</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide popular-slide">
+								<div class="popular-slide__thumb">
+									<img src="/images/variant-4.png" alt="">
+								</div>
+								<div class="popular-slide__text">
+									<div class="popular-slide__title">СНТ Солнце</div>
+									<div class="popular-slide__desc text">Просторная ул., 2А, Московская область, микрорайон Опалиха, Красногорск</div>
+								</div>
+								<div class="popular-slide__labels">
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M4.125 4.125C2.99406 4.125 2.0625 5.05656 2.0625 6.1875V10.8494C1.64312 11.2283 1.375 11.7707 1.375 12.375V18.5625H4.8125V17.1875H17.1875V18.5625H20.625V12.375C20.625 11.7707 20.3569 11.2283 19.9375 10.8494V6.1875C19.9375 5.05656 19.0059 4.125 17.875 4.125H4.125ZM4.125 5.5H17.875C18.2566 5.5 18.5625 5.80594 18.5625 6.1875V10.3125H17.1875V9.625C17.1875 8.49406 16.2559 7.5625 15.125 7.5625H12.375C11.8484 7.5625 11.3651 7.76875 11 8.09944C10.6242 7.75605 10.1341 7.56468 9.625 7.5625H6.875C5.74406 7.5625 4.8125 8.49406 4.8125 9.625V10.3125H3.4375V6.1875C3.4375 5.80594 3.74344 5.5 4.125 5.5ZM6.875 8.9375H9.625C10.0066 8.9375 10.3125 9.24344 10.3125 9.625V10.3125H6.1875V9.625C6.1875 9.24344 6.49344 8.9375 6.875 8.9375ZM12.375 8.9375H15.125C15.5066 8.9375 15.8125 9.24344 15.8125 9.625V10.3125H11.6875V9.625C11.6875 9.24344 11.9934 8.9375 12.375 8.9375ZM3.4375 11.6875H18.5625C18.9441 11.6875 19.25 11.9934 19.25 12.375V17.1875H18.5625V15.8125H3.4375V17.1875H2.75V12.375C2.75 11.9934 3.05594 11.6875 3.4375 11.6875Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>4 комнаты</span>
+									</div>
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M17.875 2.75C16.3556 2.75 15.125 3.98062 15.125 5.5H13.75V6.875H17.875V5.5H16.5C16.5 4.68119 17.0562 4.125 17.875 4.125C18.6938 4.125 19.25 4.68119 19.25 5.5V9.625H0.6875V11H1.50425L2.55612 16.2209V16.2422C2.63597 16.5927 2.80427 16.917 3.04496 17.184C3.28566 17.4511 3.59074 17.652 3.93112 17.7677L3.4375 19.25H4.8125L5.2635 17.875H16.7365L17.1875 19.25H18.5625L18.0682 17.7677C18.788 17.5477 19.3469 16.9703 19.5078 16.2422V16.2209L20.4964 11H21.3125V9.625H20.625V5.5C20.625 3.98062 19.3944 2.75 17.875 2.75ZM2.90056 11H19.1208L18.1541 15.9631C18.0737 16.2607 17.8214 16.5 17.4666 16.5H4.598C4.2295 16.5 3.97994 16.2559 3.9105 15.9411L2.90056 11Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>1 Ванная комната</span>
+									</div>
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M3.4375 3.4375V8.25H4.8125V13.75H3.4375V18.5625H8.25V17.1875H13.75V18.5625H18.5625V13.75H17.1875V8.25H18.5625V3.4375H13.75V4.8125H8.25V3.4375H3.4375ZM4.8125 4.8125H6.875V6.875H4.8125V4.8125ZM15.125 4.8125H17.1875V6.875H15.125V4.8125ZM8.25 6.1875H13.75V8.25H15.8125V13.75H13.75V15.8125H8.25V13.75H6.1875V8.25H8.25V6.1875ZM4.8125 15.125H6.875V17.1875H4.8125V15.125ZM15.125 15.125H17.1875V17.1875H15.125V15.125Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>183 м*2 </span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide popular-slide">
+								<div class="popular-slide__thumb">
+									<img src="/images/variant-5.png" alt="">
+								</div>
+								<div class="popular-slide__text">
+									<div class="popular-slide__title">Кембридж</div>
+									<div class="popular-slide__desc text">Московская область, городской округ Истра, деревня Красный Посёлок, Английский бульвар</div>
+								</div>
+								<div class="popular-slide__labels">
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M4.125 4.125C2.99406 4.125 2.0625 5.05656 2.0625 6.1875V10.8494C1.64312 11.2283 1.375 11.7707 1.375 12.375V18.5625H4.8125V17.1875H17.1875V18.5625H20.625V12.375C20.625 11.7707 20.3569 11.2283 19.9375 10.8494V6.1875C19.9375 5.05656 19.0059 4.125 17.875 4.125H4.125ZM4.125 5.5H17.875C18.2566 5.5 18.5625 5.80594 18.5625 6.1875V10.3125H17.1875V9.625C17.1875 8.49406 16.2559 7.5625 15.125 7.5625H12.375C11.8484 7.5625 11.3651 7.76875 11 8.09944C10.6242 7.75605 10.1341 7.56468 9.625 7.5625H6.875C5.74406 7.5625 4.8125 8.49406 4.8125 9.625V10.3125H3.4375V6.1875C3.4375 5.80594 3.74344 5.5 4.125 5.5ZM6.875 8.9375H9.625C10.0066 8.9375 10.3125 9.24344 10.3125 9.625V10.3125H6.1875V9.625C6.1875 9.24344 6.49344 8.9375 6.875 8.9375ZM12.375 8.9375H15.125C15.5066 8.9375 15.8125 9.24344 15.8125 9.625V10.3125H11.6875V9.625C11.6875 9.24344 11.9934 8.9375 12.375 8.9375ZM3.4375 11.6875H18.5625C18.9441 11.6875 19.25 11.9934 19.25 12.375V17.1875H18.5625V15.8125H3.4375V17.1875H2.75V12.375C2.75 11.9934 3.05594 11.6875 3.4375 11.6875Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>3 Спальни</span>
+									</div>
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M17.875 2.75C16.3556 2.75 15.125 3.98062 15.125 5.5H13.75V6.875H17.875V5.5H16.5C16.5 4.68119 17.0562 4.125 17.875 4.125C18.6938 4.125 19.25 4.68119 19.25 5.5V9.625H0.6875V11H1.50425L2.55612 16.2209V16.2422C2.63597 16.5927 2.80427 16.917 3.04496 17.184C3.28566 17.4511 3.59074 17.652 3.93112 17.7677L3.4375 19.25H4.8125L5.2635 17.875H16.7365L17.1875 19.25H18.5625L18.0682 17.7677C18.788 17.5477 19.3469 16.9703 19.5078 16.2422V16.2209L20.4964 11H21.3125V9.625H20.625V5.5C20.625 3.98062 19.3944 2.75 17.875 2.75ZM2.90056 11H19.1208L18.1541 15.9631C18.0737 16.2607 17.8214 16.5 17.4666 16.5H4.598C4.2295 16.5 3.97994 16.2559 3.9105 15.9411L2.90056 11Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>2 Ванные комнаты</span>
+									</div>
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M3.4375 3.4375V8.25H4.8125V13.75H3.4375V18.5625H8.25V17.1875H13.75V18.5625H18.5625V13.75H17.1875V8.25H18.5625V3.4375H13.75V4.8125H8.25V3.4375H3.4375ZM4.8125 4.8125H6.875V6.875H4.8125V4.8125ZM15.125 4.8125H17.1875V6.875H15.125V4.8125ZM8.25 6.1875H13.75V8.25H15.8125V13.75H13.75V15.8125H8.25V13.75H6.1875V8.25H8.25V6.1875ZM4.8125 15.125H6.875V17.1875H4.8125V15.125ZM15.125 15.125H17.1875V17.1875H15.125V15.125Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>156 м*2</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide popular-slide">
+								<div class="popular-slide__thumb">
+									<img src="/images/variant-6.png" alt="">
+								</div>
+								<div class="popular-slide__text">
+									<div class="popular-slide__title">Высотное здание на Кудринской площади</div>
+									<div class="popular-slide__desc text">Москва , Кудринская площадь, 1</div>
+								</div>
+								<div class="popular-slide__labels">
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M4.125 4.125C2.99406 4.125 2.0625 5.05656 2.0625 6.1875V10.8494C1.64312 11.2283 1.375 11.7707 1.375 12.375V18.5625H4.8125V17.1875H17.1875V18.5625H20.625V12.375C20.625 11.7707 20.3569 11.2283 19.9375 10.8494V6.1875C19.9375 5.05656 19.0059 4.125 17.875 4.125H4.125ZM4.125 5.5H17.875C18.2566 5.5 18.5625 5.80594 18.5625 6.1875V10.3125H17.1875V9.625C17.1875 8.49406 16.2559 7.5625 15.125 7.5625H12.375C11.8484 7.5625 11.3651 7.76875 11 8.09944C10.6242 7.75605 10.1341 7.56468 9.625 7.5625H6.875C5.74406 7.5625 4.8125 8.49406 4.8125 9.625V10.3125H3.4375V6.1875C3.4375 5.80594 3.74344 5.5 4.125 5.5ZM6.875 8.9375H9.625C10.0066 8.9375 10.3125 9.24344 10.3125 9.625V10.3125H6.1875V9.625C6.1875 9.24344 6.49344 8.9375 6.875 8.9375ZM12.375 8.9375H15.125C15.5066 8.9375 15.8125 9.24344 15.8125 9.625V10.3125H11.6875V9.625C11.6875 9.24344 11.9934 8.9375 12.375 8.9375ZM3.4375 11.6875H18.5625C18.9441 11.6875 19.25 11.9934 19.25 12.375V17.1875H18.5625V15.8125H3.4375V17.1875H2.75V12.375C2.75 11.9934 3.05594 11.6875 3.4375 11.6875Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>4 cпальни</span>
+									</div>
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M17.875 2.75C16.3556 2.75 15.125 3.98062 15.125 5.5H13.75V6.875H17.875V5.5H16.5C16.5 4.68119 17.0562 4.125 17.875 4.125C18.6938 4.125 19.25 4.68119 19.25 5.5V9.625H0.6875V11H1.50425L2.55612 16.2209V16.2422C2.63597 16.5927 2.80427 16.917 3.04496 17.184C3.28566 17.4511 3.59074 17.652 3.93112 17.7677L3.4375 19.25H4.8125L5.2635 17.875H16.7365L17.1875 19.25H18.5625L18.0682 17.7677C18.788 17.5477 19.3469 16.9703 19.5078 16.2422V16.2209L20.4964 11H21.3125V9.625H20.625V5.5C20.625 3.98062 19.3944 2.75 17.875 2.75ZM2.90056 11H19.1208L18.1541 15.9631C18.0737 16.2607 17.8214 16.5 17.4666 16.5H4.598C4.2295 16.5 3.97994 16.2559 3.9105 15.9411L2.90056 11Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>1 Ванная комната</span>
+									</div>
+									<div class="popular-slide__label">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M3.4375 3.4375V8.25H4.8125V13.75H3.4375V18.5625H8.25V17.1875H13.75V18.5625H18.5625V13.75H17.1875V8.25H18.5625V3.4375H13.75V4.8125H8.25V3.4375H3.4375ZM4.8125 4.8125H6.875V6.875H4.8125V4.8125ZM15.125 4.8125H17.1875V6.875H15.125V4.8125ZM8.25 6.1875H13.75V8.25H15.8125V13.75H13.75V15.8125H8.25V13.75H6.1875V8.25H8.25V6.1875ZM4.8125 15.125H6.875V17.1875H4.8125V15.125ZM15.125 15.125H17.1875V17.1875H15.125V15.125Z"
+												fill="var(--accent-color)" />
+										</svg>
+										<span>173 м*2</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-buttons">
+						<div class="popular-slider-btn popular-slider-prev swiper-button-prev"></div>
+						<div class="popular-slider-btn popular-slider-next swiper-button-next"></div>
+					</div>
+				</div>
+				<div class="popular__link">
+					<a href="" class="link">Посмотреть все предложения</a>
+				</div>
+			</div>
+		</section>
+		<section class="why">
+			<div class='why__container'>
+				<h2 class="title why__title">Почему стоит выбрать именно нас</h2>
+				<div class="why__body">
+					<div class="why__item item-why">
+						<div class="item-why__img">
+							<svg width="241" height="242" viewBox="0 0 241 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M137.686 160.43L205.86 228.604" stroke="var(--accent-color)" stroke-width="16" />
+								<path d="M159.885 138.231L228.058 206.405" stroke="var(--accent-color)" stroke-width="16" />
+								<path
+									d="M228.058 206.405C231.002 209.349 232.656 213.341 232.656 217.504C232.656 221.667 231.002 225.66 228.058 228.604"
+									stroke="var(--accent-color)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+								<path
+									d="M205.86 228.603C208.803 231.547 212.796 233.201 216.959 233.201C221.122 233.201 225.115 231.547 228.058 228.603"
+									stroke="var(--accent-color)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+								<path
+									d="M78.9388 8.8483C88.2148 8.8483 97.3999 10.6753 105.97 14.2251C114.54 17.7749 122.327 22.9779 128.886 29.537C135.445 36.0961 140.648 43.8829 144.198 52.4528C147.747 61.0227 149.574 70.2078 149.574 79.4838C149.574 88.7598 147.747 97.945 144.197 106.515C140.648 115.085 135.445 122.872 128.886 129.431C122.327 135.99 114.54 141.193 105.97 144.743C97.3999 148.292 88.2148 150.119 78.9388 150.119C60.2051 150.119 42.2386 142.677 28.9919 129.431C15.7452 116.184 8.30322 98.2176 8.30322 79.4838C8.30322 70.2078 10.1303 61.0227 13.68 52.4528C17.2298 43.8829 22.4328 36.0961 28.9919 29.537C35.551 22.9779 43.3378 17.7749 51.9077 14.2251C60.4776 10.6753 69.6628 8.8483 78.9388 8.8483Z"
+									stroke="var(--accent-color)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M137.686 160.43L159.885 138.231" stroke="var(--accent-color)" stroke-width="16"
+									stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M148.785 149.331L128.886 129.431" stroke="var(--accent-color)" stroke-width="16"
+									stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M156.634 179.378L178.833 157.179" stroke="var(--accent-color)" stroke-width="16"
+									stroke-linecap="round" stroke-linejoin="round" />
+								<path
+									d="M78.9387 40.2419C89.3463 40.2419 99.3277 44.3763 106.687 51.7356C114.046 59.0949 118.181 69.0763 118.181 79.4839"
+									stroke="var(--accent-color)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</div>
+						<div class="item-why__title">Легкий поиск</div>
+						<div class="item-why__text text">У нас вы сможете легко найти идеальный вариант благодаря удобному поиску с фильтрами по цене, местоположению и типу недвижимости.</div>
+					</div>
+					<div class="why__item item-why">
+						<div class="item-why__img">
+							<svg width="512" height="481" viewBox="0 0 512 481" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M448 167.8V44.8C448.018 38.9192 446.875 33.0927 444.636 27.6548C442.397 22.217 439.106 17.2749 434.951 13.1124C430.797 8.94982 425.862 5.6487 420.428 3.39852C414.995 1.14834 409.171 -0.00658468 403.29 2.82382e-05H280.36C272.299 0.0166128 264.57 3.21097 258.85 8.89003L13.09 254.58C4.70821 262.989 0.00158691 274.377 0.00158691 286.25C0.00158691 298.123 4.70821 309.511 13.09 317.92L130.09 434.92C138.496 443.304 149.883 448.012 161.755 448.012C173.627 448.012 185.014 443.304 193.42 434.92L439.11 189.31C444.791 183.591 447.986 175.861 448 167.8V167.8ZM352 128C345.671 128 339.484 126.123 334.222 122.607C328.959 119.091 324.858 114.093 322.436 108.246C320.014 102.399 319.38 95.9645 320.615 89.7571C321.85 83.5497 324.897 77.8479 329.373 73.3726C333.848 68.8973 339.55 65.8496 345.757 64.6149C351.965 63.3802 358.399 64.0139 364.246 66.4359C370.093 68.8579 375.091 72.9594 378.607 78.2218C382.123 83.4842 384 89.671 384 96C384 104.487 380.629 112.626 374.627 118.627C368.626 124.629 360.487 128 352 128Z"
+									fill="var(--accent-color)" />
+								<path
+									d="M496 48C491.757 48 487.687 49.6857 484.686 52.6863C481.686 55.6869 480 59.7565 480 64V191.37L218.69 452.69C217.142 454.161 215.904 455.927 215.049 457.884C214.194 459.841 213.739 461.949 213.712 464.085C213.684 466.22 214.085 468.34 214.889 470.318C215.694 472.296 216.887 474.093 218.397 475.603C219.907 477.113 221.704 478.306 223.682 479.111C225.66 479.915 227.78 480.316 229.915 480.288C232.051 480.261 234.159 479.806 236.116 478.951C238.073 478.096 239.839 476.858 241.31 475.31L503.31 213.31C506.097 210.51 508.3 207.185 509.792 203.526C511.284 199.868 512.034 195.95 512 192V64C512 59.7565 510.314 55.6869 507.314 52.6863C504.313 49.6857 500.243 48 496 48V48Z"
+									fill="var(--accent-color)" />
+							</svg>
+						</div>
+						<div class="item-why__title">Лучшие предложения</div>
+						<div class="item-why__text text">На нашем сайте вы найдете лучшие предложения по аренде жилья, которые удовлетворят любые ваши потребности и предпочтения.</div>
+					</div>
+					<div class="why__item item-why">
+						<div class="item-why__img">
+							<svg width="84" height="72" viewBox="0 0 84 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M75.9375 22.4584L82.45 15.9459L76.5584 10.0542L69.4417 17.1667C65.0667 14.5417 59.9667 13 54.5 13C38.4209 13 25.3334 26.0834 25.3334 42.1667C25.3334 58.25 38.4209 71.3334 54.5 71.3334C70.5792 71.3334 83.6667 58.25 83.6667 42.1667C83.6634 34.8585 80.9032 27.8205 75.9375 22.4584ZM54.5 63C43.0125 63 33.6667 53.6542 33.6667 42.1667C33.6667 30.6792 43.0125 21.3334 54.5 21.3334C65.9875 21.3334 75.3334 30.6792 75.3334 42.1667C75.3334 53.6542 65.9875 63 54.5 63Z"
+									fill="var(--accent-color)" />
+								<path
+									d="M50.3334 29.6667H58.6667V46.3333H50.3334V29.6667ZM46.1667 0.5H62.8334V8.83333H46.1667V0.5ZM4.50004 21.3333H21.1667V29.6667H4.50004V21.3333ZM4.50004 54.6667H21.1667V63H4.50004V54.6667ZM0.333374 38H16.9584V46.3333H0.333374V38Z"
+									fill="var(--accent-color)" />
+							</svg>
+						</div>
+						<div class="item-why__title">Быстрая сделка</div>
+						<div class="item-why__text text">Мы обеспечиваем быструю сделку, позволяя вам легко арендовать или купить жилье. Наша команда готова помочь вам на каждом этапе процесса.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews">
+			<svg class="reviews-deco" width="339" height="1138" viewBox="0 0 339 1138" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path opacity="0.47" d="M-200.716 3L308.507 576.302L-187.777 1134.52L-727 561.221L-200.716 3Z"
+					stroke="var(--accent-color)" stroke-width="4" />
+				<path opacity="0.58" d="M-281.716 3L227.507 576.302L-268.777 1134.52L-808 561.221L-281.716 3Z"
+					stroke="var(--accent-color)" stroke-width="4" />
+				<path opacity="0.9" d="M-358.716 3L150.507 576.302L-345.777 1134.52L-885 561.221L-358.716 3Z"
+					stroke="var(--accent-color)" stroke-width="4" />
+			</svg>
+			<div class='reviews__container'>
+				<div class="reviews__quotes">“</div>
+				<div class="reviews__slider slider-reviews swiper">
+					<div class="swiper-wrapper">
+						<div class="slider-reviews__slide swiper-slide">
+							<div class="slider-reviews__text">Найдите свой идеальный дом с легкостью! Мы делаем процесс аренды и покупки простым и удобным. Доверьтесь нашей команде профессионалов и начните новую главу своей жизни уже сегодня!</div>
+							<div class="slider-reviews__info">
+								<div class="slider-reviews__job text">Ceo, Domaren</div>
+							</div>
+						</div>
+						<div class="slider-reviews__slide swiper-slide">
+							<div class="slider-reviews__text">Мы понимаем, что поиск жилья может быть стрессовым и утомительным. Именно поэтому мы предлагаем индивидуальный подход к каждому клиенту, учитывая ваши потребности и предпочтения. Наша команда экспертов готова предоставить вам всю необходимую информацию и поддержку на каждом этапе сделки. Мы поможем вам избежать лишних задержек и бюрократии, чтобы вы могли сосредоточиться на важном — вашем новом доме. С нами вы можете быть уверены в прозрачности и надежности всех процессов. Начните свой путь к новым возможностям и комфорту уже сегодня!</div>
+							<div class="slider-reviews__info">
+								<div class="slider-reviews__job text">Ceo, Domaren</div>
+							</div>
+						</div>
+						<div class="slider-reviews__slide swiper-slide">
+							<div class="slider-reviews__text">Ваш новый дом — наша забота, ваша мечта — наша цель!</div>
+							<div class="slider-reviews__info">
+								<div class="slider-reviews__job text">Ceo, Domaren</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-reviews__buttons">
+						<div class="slider-reviews-btn slider-reviews-prev swiper-button-prev">
+							<svg width="23" height="38" viewBox="0 0 23 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z" />
+							</svg>
+						</div>
+						<div class="slider-reviews-btn slider-reviews-next swiper-button-next">
+							<svg width="23" height="38" viewBox="0 0 23 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z" />
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="gallery">
+			<div class='gallery__container'>
+				<div class="gallery__box">
+					<div class="gallery__item swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="/images/gallery/1.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="/images/gallery/2.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="/images/gallery/3.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="/images/gallery/4.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="/images/variant-5.png" alt=""></div>
+						</div>
+					</div>
+					<div class="gallery__item swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="/images/gallery/6.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="/images/gallery/7.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="/images/gallery/8.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="/images/gallery/9.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="/images/gallery/10.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="/images/gallery/11.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="gallery__info">
+					<h2 class="gallery__title title">Мы помогаем людям</h2>
+					<div class="gallery__text text">Мы помогаем вам найти идеальный дом, где сбудутся ваши мечты. Каждая квартира и каждый дом — это новая история, которую мы создаем вместе. Наша команда заботится о каждом шаге, чтобы процесс покупки был легким и приятным. Давайте вместе откроем двери в ваше новое будущее!</div>
+					<a href="" class="gallery__link link">Связаться</a>
+				</div>
+			</div>
+		</section>
+		<section class="begin">
+			<svg class="begin-wave" width="352" height="617" viewBox="0 0 352 617" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path opacity="0.58" d="M-104 48C-3.02255 72.5207 219.946 210.45 304 566" stroke="var(--accent-color)"
+					stroke-width="3" />
+				<path opacity="0.47" d="M-58 2C42.9774 26.5207 265.946 164.45 350 520" stroke="var(--accent-color)"
+					stroke-width="3" />
+				<path opacity="0.9" d="M-148 98C-47.0226 122.521 189.5 282 251.5 616" stroke="var(--accent-color)"
+					stroke-width="3" />
+			</svg>
+			<svg class="begin-rect" width="75" height="182" viewBox="0 0 75 182" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<rect x="3.5" y="3.5" width="83" height="95" fill="var(--accent-color)" stroke="#121B25" stroke-width="7" />
+				<rect x="25.5" y="43.5" width="83" height="95" fill="var(--accent-color)" stroke="#121B25" stroke-width="7" />
+				<rect x="47.5" y="83.5" width="83" height="95" fill="var(--accent-color)" stroke="#121B25" stroke-width="7" />
+			</svg>
+			<div class='begin__container'>
+				<div class="begin__slogan">Давайте начнем Domaren</div>
+				<div class="begin__content">
+					<div class="begin__text text">С Domaren ваши мечты становятся реальностью! Мы предлагаем широкий выбор недвижимости для аренды и продажи, чтобы вы могли найти идеальный дом для себя и своей семьи.
+					</div>
+					<a href="" class="begin__link link">Начать</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+		<div class="footer__copyright">
+			<div class='copyright__container'>
+				<span class="text">© 2024 Domaren. Все права защищены.</span>
+				<span class="text">Design by: kir_nik</span>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
